@@ -8,6 +8,7 @@ import {
 import animation, {
   enter, leave, reset,
 } from './animations';
+import PropTypes from 'prop-types'
 
 export default class DynamicListRow extends Component {
   constructor(props) {
@@ -78,8 +79,8 @@ export default class DynamicListRow extends Component {
 }
 
 DynamicListRow.propTypes = {
-  time: React.PropTypes.number,
-  animation: React.PropTypes.string,
-  animationFunc: React.PropTypes.func,
-  children: React.PropTypes.element,
+  time: PropTypes.number,
+  animation: PropTypes.string,
+  animationFunc: PropTypes.func,
+  children: PropTypes.element,
 };

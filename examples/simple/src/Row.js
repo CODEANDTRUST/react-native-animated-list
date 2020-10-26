@@ -6,6 +6,7 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   rowStyle: {
@@ -32,8 +33,8 @@ const Row = (props) => (
 );
 
 Row.propTypes = {
-  onRemove: React.PropTypes.func,
-  item: React.PropTypes.string,
+  onRemove: PropTypes.func,
+  item: PropTypes.string,
 };
 
 export default Row;

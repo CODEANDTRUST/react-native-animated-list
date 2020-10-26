@@ -7,6 +7,7 @@ import {
   FlatList,
 } from 'react-native';
 import DynamicListRow from './DynamicListRow';
+import PropTypes from 'prop-types'
 
 const styles = StyleSheet.create({
   container: {
@@ -100,10 +101,10 @@ export default class DynamicList extends Component {
 }
 
 DynamicList.propTypes = {
-  renderRow: React.PropTypes.func.isRequired,
-  time: React.PropTypes.number,
-  onRemove: React.PropTypes.func.isRequired,
-  animation: React.PropTypes.string,
-  style: React.PropTypes.object,
-  animationFunc: React.PropTypes.func,
+  renderRow: PropTypes.func.isRequired,
+  time: PropTypes.number,
+  onRemove: PropTypes.func.isRequired,
+  animation: PropTypes.string,
+  style: PropTypes.object,
+  animationFunc: PropTypes.func,
 };

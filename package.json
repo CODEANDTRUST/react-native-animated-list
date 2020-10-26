@@ -41,14 +41,14 @@
   },
   "homepage": "https://github.com/franciscofsales/react-native-animated-list#readme",
   "devDependencies": {
-    "react": "~15.3.1",
-    "react-native": "^0.36.0",
     "babel-jest": "^16.0.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-react-native": "^1.9.0",
     "jest": "^16.1.0-alpha.691b0e22",
     "jest-react-native": "^16.1.0-alpha.691b0e22",
+    "react": "~15.3.1",
+    "react-native": "^0.36.0",
     "react-test-renderer": "^15.3.2"
   },
   "jest": {
@@ -56,5 +56,8 @@
   },
   "peerDependencies": {
     "react-native": "^0.36.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   }
 }
