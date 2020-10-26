@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
-  ListView,
+  FlatList,
 } from 'react-native';
 import DynamicListRow from './DynamicListRow';
 
@@ -48,7 +48,7 @@ export default class DynamicList extends Component {
   }
 
   createDataSource({ items }) {
-    const ds = new ListView.DataSource({
+    const ds = new FlatList.DataSource({
       rowHasChanged: (r1, r2) => r1 !== r2,
     });
     this._data = items;
@@ -88,7 +88,7 @@ export default class DynamicList extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ListView
+        <FlatList
           enableEmptySections
           dataSource={this.state.dataSource}
           renderRow={this._renderRow}
